@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Career Guide</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+	<link href="./css/styles.css" rel="stylesheet" type="text/css">
+	<link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="./css/chartist.css" rel="stylesheet" type="text/css">
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/jQuery.js"></script>
+	<script src="./js/Logic.js"></script>
+	<script src="./js/html5shiv.js"></script>
+	<script src="./js/respond.min.js"></script>
+	<script src="./js/index.js"></script>
+	<script src="./js/chartist.js"></script>
+	<script src="./js/bootstrap.js"></script>
+	<!-- /*this code belongs to dop3ch3f */<script src="../../ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+	<div id="question">
+		<!--Navbar-->
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">
+						Career Path Guide
+					</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="#myPage">Home</a>
+						</li>
+						<li>
+							<a href="#guide">Our Guide</a>
+						</li>
+						<li>
+							<a href="#testimonials">Testimonials</a>
+						</li>
+						<li>
+							<a href="#about">About Us</a>
+						</li>
+						<li>
+							<a href="#contact">Contact Us</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!--home carousel-->
+		<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+			<!-- Indicators -->
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner" role="listbox">
+				<div class="item ">
+					<img src="./img/bg2.jpg" alt="Laptop">
+					<div class="carousel-caption hidden-xs">
+						<h1>Wondering What To Be In Future ?</h1>
+						<a class="btn btn-lg btn-success" href="#guide">Take Our Test</a>
+					</div>
+				</div>
+
+				<div class="item active">
+					<img src="./img/confused.jpg" alt="Lost">
+					<div class="carousel-caption hidden-xs">
+						<h1>Wondering Where You Fit In Life ?</h1>
+						<a class="btn btn-lg btn-danger" href="#guide">Find Out Now</a>
+					</div>
+				</div>
+
+				<div class="item">
+					<img src="./img/grad.jpg" alt="Graduation">
+					<div class="carousel-caption hidden-xs">
+						<h1>Just Left College, Wondering What To Major In ?</h1>
+						<a class="btn btn-lg btn-info" href="#guide">Find Out Now</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Container (The Disclaimer Section) -->
+		<div id="toast" class="container text-center">
+			<h1>Disclaimer</h1>
+			<h2> Knowing where your skills can be applied in life is a huge and sensitive. We understand that most people don't have the
+				ability of finding their true career path. We also understand that some people are so skilled they fit in anywhere, so
+				we have created a career guidance website to address this problem and help remove people from their rat races.We deeply
+				apologize if our application turns out to be of no use to you. When looking at life there are always complications and
+				were not Gods, we can't possibly know every facet of life.But We hope for nothing less than the best for you.</h2>
+		</div>
+		<!-- Container (Guide Section) -->
+		<div id="guide" class="bg-1">
+			<div class="container text-center">
+				<h2>Career Guide Trivia</h2>
+				<p>Before You Begin
+					<br> Remember to be as Honest As Possible !!!</p>
+				<br/>
+				<button class="btn btn-success btn-lg" data-toggle="collapse" data-target="#identity">Start !!</button>
+				<br/>
+				<br/>
+				<div class="row text-center">
+					<form>
+						<div class="col-md-8 col-md-offset-2">
+							<div class="panel-group">
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">Section One: Introduction</h4>
+									</div>
+									<div class="panel-collapse collapse" id="identity">
+										<div class="panel-body">
+											<h4>We Would Like To Know You</h4>
+											<div class="row">
+												<div class="col-md-6 col-md-offset-3">
+													<div class="form-group">
+														<label for="name">Full Name:</label>
+														<input type="text" class="form-control" id="name">
+													</div>
+													<div class="form-group">
+														<label for="email">Email Address:</label>
+														<input type="email" class="form-control" id="email">
+													</div>
+													<div class="form-group">
+														<label for="tel">Tel:</label>
+														<input type="text" class="form-control" id="Tel">
+													</div>
+												</div>
+											</div>
+
+										</div>
+										<div class="panel-footer">
+											<button type="button" class="btn btn-success btn-md" data-toggle="collapse" data-target="#level">Next</button>
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">Section Two: Educational Background</h4>
+									</div>
+									<div class="panel-collapse collapse" id="level">
+										<div class="panel-body text-center">
+											<h4>Please Tell Us Your Preferred Majors In College</h4>
+											<div class="row">
+												<div class="col-md-6">
+													<h4>Sciences</h4>
+													<div class="checkbox">
+														<label>
+															Maths</label>
+														<input id="s1" value=0 type="checkbox">
+													</div>
+													<div class="checkbox">
+														<label>
+															<input id="s2" value=0 type="checkbox"> F.Maths</label>
+													</div>
+													<div class="checkbox">
+														<label>
+															<input id="s3" value=0 type="checkbox"> Biology</label>
+													</div>
+													<div class="checkbox">
+														<label>
+															<input id="s4" value=0 type="checkbox"> Physics</label>
+													</div>
+													<div class="checkbox">
+														<label>
+															<input id="s5" value=0 type="checkbox"> Chemistry</label>
+													</div>
+													<div class="checkbox">
+														<label>
+															<input id="s6" value=0 type="checkbox"> Technical Drawing</label>
+													</div>
+												</div>
+												<div class="col-md-6">
+													<h4>Arts & Business</h4>
+													<div class="checkbox">
+														<label>
+															<input id="a1" value=0 type="checkbox"> Account</label>
+													</div>
+													<div class="checkbox">
+														<label>
+															<input id="a2" value=0 type="checkbox"> Commerce</label>
+													</div>
+													<div class="checkbox">
+														<label>
+															<input id="a3" value=0 type="checkbox"> Economics</label>
+													</div>
+													<div class="checkbox">
+														<label>
+															<input id="a4" value=0 type="checkbox"> Government</label>
+													</div>
+													<div class="checkbox">
+														<label>
+															<input id="a5" value=0 type="checkbox"> Literature</label>
+													</div>
+													<div class="checkbox">
+														<label>
+															<input id="a6" value=0 type="checkbox"> History</label>
+													</div>
+												</div>
+											</div>
+											<br/>
+											<h4>Note: We've Assumed You've atleast gone to college. If you've not skip to next section.</h4>
+										</div>
+										<div class="panel-footer">
+											<button type="button" class="btn btn-success btn-md" data-toggle="collapse" data-target="#1">Next</button>
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">Section Three: Trivia 1</h4>
+									</div>
+									<div class="panel-collapse collapse" id="1">
+										<div class="panel-body">
+											<div class="row">
+												<h5>Tick For Positive. Empty For Negative</h5>
+												<div class="col-md-6">
+													<div class="checkbox">
+														<label>
+															Do You Care About the Sick ?</label>
+														<input id="t1" value=0 type="checkbox">
+													</div>
+													<div class="checkbox">
+														<label>
+															<input id="t2" value=0 type="checkbox">Do You Like Doctors and Related ?</label>
+													</div>
+													<div class="checkbox">
+														<label>
+															<input id="t3" value=0 type="checkbox">Wonder What Humans are Made Up of and More ?</label>
+													</div>
+													<div class="checkbox">
+														<label>
+															<input id="t4" value=0 type="checkbox">Do You Appreciate Digital Technology?</label>
+													</div>
+													<div class="checkbox">
+														<label>
+															<input id="t5" value=0 type="checkbox">Are You Always Curious About How Digital Stuff Works?</label>
+													</div>
+													<div class="checkbox">
+														<label>
+															<input id="t6" value=0 type="checkbox">Would Building and Dabbling With The Digital World be a Good Idea to you ?</label>
+													</div>
+												</div>
+												<div class="col-md-6">
+
+													<div class="checkbox">
+														<label>
+															<input id="t7" value=0 type="checkbox">Do You Feel You can Rule a Nation/State/District ?</label>
+													</div>
+													<div class="checkbox">
+														<label>
+															<input id="t8" value=0 type="checkbox">Are You Always interested with national and international matters arising ?</label>
+													</div>
+													<div class="checkbox">
+														<label>
+															<input id="t9" value=0 type="checkbox">Do You have better views of politics ?</label>
+													</div>
+													<div class="checkbox">
+														<label>
+															<input id="t10" value=0 type="checkbox">Do You Record Stuff especially your Finances and Expenditures ?</label>
+													</div>
+													<div class="checkbox">
+														<label>
+															<input id="t11" value=0 type="checkbox">Are You Good with Your Figures ?</label>
+													</div>
+													<div class="checkbox">
+														<label>
+															<input id="t12" value=0 type="checkbox">Are You Keen on Details in Your Records ?</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="panel-footer">
+											<button type="button" class="btn btn-success btn-md" data-toggle="collapse" data-target="#2">Next</button>
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">Section Four: Trivia 2</h4>
+									</div>
+									<div class="panel-collapse collapse" id="2">
+										<div class="panel-body">
+											<div class="row">
+												<h4>Tick For Positive. Empty For Negative</h4>
+												<div class="col-md-6">
+
+													<div class="checkbox">
+														<label>
+															Are You a Budget Always Kind Of person ?</label>
+														<input id="t13" value=0 type="checkbox">
+													</div>
+													<div class="checkbox">
+														<label>
+															<input id="t14" value=0 type="checkbox">Are You Always looking For cheaper ways to do/get stuff ?</label>
+													</div>
+													<div class="checkbox">
+														<label>
+															<input id="t15" value=0 type="checkbox">Are you fascinated by Machines ?</label>
+													</div>
+													<div class="checkbox">
+														<label>
+															<input id="t16" value=0 type="checkbox">Do you build stuff ?</label>
+													</div>
+													<div class="checkbox">
+														<label>
+															<input id="t17" value=0 type="checkbox">Are You Good in Maths or Atleast not intimidated by Maths ?</label>
+													</div>
+													<div class="checkbox">
+														<label>
+															<input id="t18" value=0 type="checkbox">Are You a People's Person ?</label>
+													</div>
+												</div>
+												<div class="col-md-6">
+
+													<div class="checkbox">
+														<label>
+															<input id="t19" value=0 type="checkbox">Are You fascinated by Some Movie/Music Artists?</label>
+													</div>
+													<div class="checkbox">
+														<label>
+															<input id="t20" value=0 type="checkbox">Are you keen on details in Movies ?</label>
+													</div>
+													<div class="checkbox">
+														<label>
+															<input id="t21" value=0 type="checkbox">Would you like to Sing if you had the chance ?</label>
+													</div>
+													<div class="checkbox">
+														<label>
+															<input id="t22" value=0 type="checkbox">Would You Act in Movies</label>
+													</div>
+													<div class="checkbox">
+														<label>
+															<input id="t23" value=0 type="checkbox">Do You Love Plants or Animals</label>
+													</div>
+													<div class="checkbox">
+														<label>
+															<input id="t24" value=0 type="checkbox">Would you like to go deep in the study of Plants and Animals If you Had the chance ?</label>
+													</div>
+													<div class="checkbox">
+														<label>
+															<input id="t25" value=0 type="checkbox">Do you love nicely built buildings ?</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="panel-footer">
+											<button type="button" class="btn btn-success btn-md" data-toggle="collapse" data-target="#3">Next</button>
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">Section Five: Trivia 3</h4>
+									</div>
+									<div class="panel-collapse collapse" id="3">
+										<div class="panel-body">
+											<div class="row">
+												<h4>We Want To Hear Your Own Voice. Pick All the Fields/Careers That Interest You</h4>
+												<div class="col-md-6">
+													<div class="checkbox">
+														<label>
+															Medicine</label>
+														<input id="v1" value=0 type="checkbox">
+													</div>
+													<div class="checkbox">
+														<label>
+															<input id="v2" value=0 type="checkbox">Computing & Engineering</label>
+													</div>
+													<div class="checkbox">
+														<label>
+															<input id="v3" value=0 type="checkbox">Politics</label>
+													</div>
+													<div class="checkbox">
+														<label>
+															<input id="v4" value=0 type="checkbox">Accounting</label>
+													</div>
+													<div class="checkbox">
+														<label>
+															<input id="v5" value=0 type="checkbox">Economics</label>
+													</div>
+													<div class="checkbox">
+														<label>
+															<input id="v6" value=0 type="checkbox">Mechanical Engineering</label>
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="checkbox">
+														<label>
+															<input id="v7" value=0 type="checkbox">Marketing & Mass Communication</label>
+													</div>
+													<div class="checkbox">
+														<label>
+															<input id="v8" value=0 type="checkbox">Theatre Arts</label>
+													</div>
+													<div class="checkbox">
+														<label>
+															<input id="v9" value=0 type="checkbox">Agriculture</label>
+													</div>
+													<div class="checkbox">
+														<label>
+															<input id="v10" value=0 type="checkbox">Music</label>
+													</div>
+													<div class="checkbox">
+														<label>
+															<input id="v11" value=0 type="checkbox">Architecture</label>
+													</div>
+													<div class="checkbox">
+														<label>
+															<input id="v12" value=0 type="checkbox">Civil Engineering</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="panel-footer">
+											<button type="button" class="btn btn-success btn-md" id="submit">Finish</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+
+				</div>
+			</div>
+		</div>
+		<!--Testimonial-->
+		<div id="testimonials" class="container text-center">
+			<h2>Testimonials</h2>
+			<h5>What People Think about Us</h5>
+			<br/>
+			<br/>
+			<div id="myCarousel1" class="carousel slide text-center" data-ride="carousel" data-interval="2500">
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<h2>"This Guide is the best. I am so happy !"
+							<br>
+							<span style="font-style:normal;">Miss Mary Nwankwo, Architect, </span>
+						</h2>
+					</div>
+					<div class="item">
+						<h2>"One word... WOW!!"
+							<br>
+							<span style="font-style:normal;">Mr Gabriel, Logistics</span>
+						</h2>
+					</div>
+					<div class="item">
+						<h2>"Could I... BE any more happy with this Guide?"
+							<br>
+							<span style="font-style:normal;">Miss Judith, Musician</span>
+						</h2>
+					</div>
+					<div class="item">
+						<h2>"I've finally found my place in life all thanks to you !!"
+							<br>
+							<span style="font-style:normal;">Mr Ifeanyi, Developer</span>
+						</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--About-->
+		<div id="about" class="text-center">
+			<div class="container">
+				<h2>Development Team</h2>
+				<p>INSY 401 Group 4 Members</p>
+				<div class="row">
+					<br/>
+					<div class="col-md-6 text-center">
+						<ul type="none">
+							<li>Ibekie Ifeanyi 14/2998
+								
+							<br/>
+							<li>Banjo Olwapelumi Aminat 14/3837
+								
+							</li>
+							<br/>
+							<li>Balogun Olanrewaju 14/0784
+								
+							</li>
+							<br/>
+							<li>Ibiyeye Omolola 15/3671
+								
+							</li>
+							<br/>
+							<li>Akinsete Adebola 14/4274
+								
+							</li>
+							<br/>
+						</ul>
+					</div>
+					<div class="col-md-6 text-center">
+						<ul type="none">
+							<li>Anomneze Quintus 14/2167
+								
+							</li>
+							<br/>
+							<li>Adeoye Esther 14/0394
+								
+							</li>
+							<br/>
+							<li>Okonkwo Nneka Francisca 15/3683
+								
+							</li>
+							<br/>
+							<li>Mordi Stephanie 14/3885
+								
+							</li>
+							<br/>
+							<li>
+								Uche Elekwa 14/+
+								
+							</li>
+							<br/>
+							<li>
+								Bukola Adeoluwa 14/4031
+								
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Container (Contact Section) -->
+		<div id="contact" class="container">
+			<h2 class="text-center">Contact Us</h2>
+			<p class="text-center">
+				Love Our Work ? Drop a note.
+			</p>
+			<br/>
+			<div class="row">
+				<div class="col-md-6 text-center">
+					<div class="row">
+						<br/>
+						<p>
+							<span class="glyphicon glyphicon-map-marker"></span> Address: Babcock University, Ilishan-Remo, Ogun State, Nigeria</p>
+						<br/>
+						<p>
+
+							<span class="glyphicon glyphicon-phone"></span> Phone: +2348145126202</p>
+						<br/>
+						<p>
+							<span class="glyphicon glyphicon-envelope"></span> Email: ifeanyi.ibekie@gmail.com</p>
+						<br/>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<form>
+						<div class="row">
+							<div class="col-sm-12 form-group">
+								<input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+							</div>
+							<div class="col-sm-12 form-group">
+								<input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+							</div>
+						</div>
+						<textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+						<br>
+						<div class="row">
+							<div class="col-md-12 form-group">
+								<button class="btn btn-block" type="submit">Send</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<br/>
+		</div>
+		<!-- Footer -->
+		<footer class="text-center">
+			<br>
+			<a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+				<span class="glyphicon glyphicon-chevron-up"></span>
+			</a>
+		</footer>
+	</div>
+	<div class="container text-center" id="result">
+		<div class="alert alert-success" id="lie"></div>
+		<h3>Warning: Save/screenshot this page you will be billed again if you refresh the page/close the page</h3>
+		<br/>
+		<h1>Hurray!!!
+			<span id="named"></span>
+		</h1>
+		<h2>Here's Your Results</h2>
+		<div id="my-chart" width="100%" height="600px"></div>
+		<h3>The Highest Values are your best matches then the lowest and empty are your least matches based on your responses.</h3>
+		<blockquote cite="Ibekie Ifeanyi">
+			"Word of Advice, Do not be afraid of ambiguity all there is to life are patterns and more patterns all you gotta do to understand
+			is to study and observe."
+		</blockquote>
+		<br/>
+		<h2>Your Personal Skills</h2>
+		<div id="mychart" width="100%" height="600px"></div>
+		<br/>
+		<h3>The are the skills you may have or need for your best fit career path</h3>
+		<blockquote cite="Ibekie Ifeanyi">
+			"Word of Advice, Improve yourself on the required skills."
+		</blockquote>
+		<br/>
+		<button class="btn btn-warning" onclick="location.reload()">Try Again</button>
+		
+		<br/>
+	</div>
+	<div class="container text-center" id="pay">
+        <div class="row">
+			<div class="col-md-8 col-md-offset-2 text-center">
+				<h3>Please buy us a cup of coffee</h3>
+				<br/>
+				<div class="alert alert-info" id="lie1">Payment Processing..</div>
+				<br/>
+                <form id="payment-form">
+					<div class="form-group">
+						<select class="form-control">
+							<option>MasterCard</option>
+							<option>Visa</option>
+							<option>Interswitch</option>
+							<option>Genesis</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Input Amount in your local currency here" maxlength="11" required />
+					</div>
+                    <div class="form-group">
+						<input type="text" class="form-control" placeholder="Card Number Here" maxlength="16" required/>
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="CVV" maxlength="3" required />
+					</div>
+					<div class="form-group">
+						<input type="password" class="form-control" placeholder="Pin" maxlength="4" required />
+					</div>
+					<button type="button" class="btn btn-block btn-success" id="donate">Donate</button>
+				</form>
+				<br/>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
