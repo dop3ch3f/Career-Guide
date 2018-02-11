@@ -58,7 +58,10 @@ $(function () {
                     let a = [$("#a1").val(), $("#a2").val(), $("#a3").val(), $("#a4").val(), $("#a5").val(), $("#a6").val()];
                     let t = [$("#t1").val(), $("#t2").val(), $("#t3").val(), $("#t4").val(), $("#t5").val(), $("#t6").val(), $("#t7").val(), $("#t8").val(), $("#t9").val(), $("#t10").val(), $("#t11").val(), $("#t12").val(), $("#t13").val(), $("#t14").val(), $("#t15").val(), $("#t16").val(), $("#t17").val(), $("#t18").val(), $("#t19").val(), $("#t20").val(), $("#t21").val(), $("#t22").val(), $("#t23").val(), $("#t24").val(), $("#t25").val()];
                     let v = [$("#v1").val(), $("#v2").val(), $("#v3").val(), $("#v4").val(), $("#v5").val(), $("#v6").val(), $("#v7").val(), $("#v8").val(), $("#v9").val(), $("#v10").val(), $("#v11").val(), $("#v12").val()];
-                
+                /* var a = [ "1","2","3"];
+                   var y = a.map( x => parseInt(x));
+                   console.log(y);
+                 */
                     //adding responses to required paths
                    /*Med*/ topics[0] = parseInt(s[0]) + parseInt(s[2]) + parseInt(s[4]) + parseInt(t[0]) + parseInt(t[1]) + parseInt(t[2]) + parseInt(v[0]) + parseInt(t[16]);
                     topics[1] = parseInt(s[0])+ parseInt(s[1])+ parseInt(s[3])+ parseInt(s[4]) +parseInt(s[5]) +parseInt(t[3]) +parseInt(t[4])+ parseInt(t[5])+ parseInt(v[1])+ parseInt(t[16]);
